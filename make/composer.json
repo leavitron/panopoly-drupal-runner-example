@@ -1,0 +1,16 @@
+{
+  "name": "pfaocle/panopoly-drupal-runner-example",
+  "description": "Test Panopoly Drupal 7 set-up for Drupal Runner.",
+
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://bitbucket.org/pfaocle/drupal-runner.git"
+    }
+  ],
+
+  "require": {
+    "codegyre/robo": "~0.4.5",
+    "pfaocle/drupal-runner": "dev-master#79ba903d586741524fbdbfa1e192765e24929bc4"
+  }
+}

@@ -1,4 +1,8 @@
-# .gitignore for a standard Drupal 7 build based in the sites subdirectory.
+# .gitignore for a standard Panopoly/Drupal 7 build based in the sites subdirectory.
+
+# Composer-installed build dependencies.
+make/vendor/
+make/composer.lock
 
 # Drupal
 files

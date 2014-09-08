@@ -1,0 +1,40 @@
+#
+# Example build configuration for a Panopoly based Drupal 7 site.
+#
+# @see https://github.com/pfaocle/panopoly-drupal-runner-example/blob/master/README.md
+#
+
+#
+# Configuration for this build.
+#
+
+# Build details - Git, remotes, Drush, make file etc.
+Build:
+    git: https://github.com/pfaocle/panopoly-drupal-runner-example.git
+    drush-alias: @p7.local
+    profile: panopoly
+    # For Panopoly, we can import from the specified database dump. Note the minimal profile will be used for
+    # site-install as this key is set:
+    #install-db: p7.sql
+    sites-subdir: p7
+    make: make/p7.make
+    sites:
+        - 8080.p7.drupal.dev
+
+# Site details - name and root user credentials.
+Site:
+    name: Panopoly
+    rootuser: root
+    rootpassword: root
+
+# Database details.
+Database:
+    name: p7
+    user: root
+    password: root
+
+Post:
+    Commands:
+        # Disable the demo modules/content. This could also be done once in the dumped sql file referenced above.
+        - dis panopoly_demo
+        - pm-uninstall panopoly_demo
