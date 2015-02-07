@@ -2,7 +2,6 @@
 
 # Composer-installed build dependencies.
 make/vendor/
-make/composer.lock
 
 # Drupal
 files
