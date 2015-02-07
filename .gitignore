@@ -1,7 +1,7 @@
 # .gitignore for a standard Panopoly/Drupal 7 build based in the sites subdirectory.
 
 # Composer-installed build dependencies.
-make/vendor/
+vendor
 
 # Drupal
 files

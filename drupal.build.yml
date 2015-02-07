@@ -17,7 +17,7 @@ Build:
     # site-install as this key is set:
     #install-db: p7.sql
     sites-subdir: p7
-    make: make/p7.make
+    make: p7.make
     sites:
         - 8080.p7.drupal.dev
 
