@@ -11,7 +11,7 @@
 # Build details - Git, remotes, Drush, make file etc.
 Build:
     git: https://github.com/pfaocle/panopoly-drupal-runner-example.git
-    drush-alias: @p7.local
+    drush-alias: "@p7.local"
     profile: panopoly
     # For Panopoly, we can import from the specified database dump. Note the minimal profile will be used for
     # site-install as this key is set:
